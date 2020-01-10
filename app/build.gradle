@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.empire.vince.vokers.carscanner"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:24.0.0'
+    //compile 'com.jakewharton:butterknife:6.1.0'
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation 'com.android.support:design:24.0.0'
+    implementation 'com.android.support:recyclerview-v7:24.0.+'
+    implementation files('libs/handheldApi.jar')
+}

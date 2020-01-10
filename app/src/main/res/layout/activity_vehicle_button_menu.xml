@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vehicle_button_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.empire.vince.vokers.carscanner.activities.VehicleButtonMenuActivity">
+
+    <Button
+        android:id="@+id/bnoplate"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        />
+
+    <Button
+        android:layout_marginTop="23dp"
+        android:id="@+id/bdrivername"
+        android:layout_below="@+id/bnoplate"
+        android:layout_alignParentStart="true"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        />
+
+    <Button
+        android:layout_below="@id/bdrivername"
+        android:layout_marginTop="21dp"
+        android:id="@+id/broute"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <Button
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/bnext"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+
+        android:background="@drawable/blafibutton"
+
+
+        />
+
+    <Button
+        android:id="@+id/boffenses"
+        android:layout_below="@id/bgpsstatus"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentEnd="true"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+
+    <Button
+        android:id="@+id/bgpsstatus"
+
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

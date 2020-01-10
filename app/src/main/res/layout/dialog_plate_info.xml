@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="No Plate"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/pTvPlate"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Car Make"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/pTvMake"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Car Model"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/pTvModel"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Car Color"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/pTvColor"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Car Year"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/pTvYear"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Route"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/pTvRoute"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight="0.5"/>
+
+
+        <Button
+            android:text="OK"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:id="@+id/pButtonOk"
+            android:textColor="@color/blue"
+            android:layout_weight="0.5"/>
+
+
+
+    </TableRow>
+</TableLayout>
+

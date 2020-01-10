@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:fontFamily="serif"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/cName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:text="Amount $"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cName"
+        android:layout_alignStart="@+id/cName"
+        android:id="@+id/textView2"
+        android:textAllCaps="true"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:textColor="@color/black" />
+
+
+    <EditText
+        android:id="@+id/cAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:text="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/cAmount"
+        android:layout_alignStart="@+id/cAmount"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/cDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Offense Description"
+        android:inputType="textMultiLine"
+        android:minLines="6"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/cAmount" />
+
+
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+android:layout_below="@+id/cDesc"
+        android:id="@+id/cBtnCancel"
+        android:layout_alignStart="@+id/cDesc" />//0713668062
+
+    <Button
+        android:text="Apply"
+        android:id="@+id/cBtnOkay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cBtnCancel"
+        android:layout_toRightOf="@+id/cBtnCancel"/>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

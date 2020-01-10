@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7faff"
+    android:orientation="vertical"
+    >
+
+    <com.empire.vince.vokers.carscanner.utilities.VokersTextView
+        android:id="@+id/welc_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Admin"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:layout_below="@+id/welc_admin"
+        android:id="@+id/linearLayout_ip">
+
+        <com.empire.vince.vokers.carscanner.utilities.VokersTextView
+            android:id="@+id/car_name_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set IP Address"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+
+            />
+
+    </LinearLayout>
+
+    <com.empire.vince.vokers.carscanner.utilities.VokersEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_ip"
+        android:layout_below="@+id/linearLayout_ip"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_below="@+id/setting_ip"
+        android:id="@+id/linearLayout_location">
+
+        <com.empire.vince.vokers.carscanner.utilities.VokersTextView
+            android:id="@+id/location_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Location"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+
+            />
+
+    </LinearLayout>
+
+    <com.empire.vince.vokers.carscanner.utilities.VokersEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_location"
+        android:layout_below="@+id/linearLayout_location"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset "
+        android:id="@+id/resetDB"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/setting_location"
+        android:layout_alignEnd="@+id/welc_admin"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

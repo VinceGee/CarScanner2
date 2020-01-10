@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tabSelect">#3366cc</color>
+    <color name="gray">#bfbfbf</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text">#3b3b3b</color>
+    <color name="textsub">#aaaaaa</color>
+    <color name="textsub2">#c3c8ca</color>
+    <color name="blue">#1787fb</color>
+    <color name="green">#21610B</color>
+    <color name="red">#ff0000</color>
+</resources>

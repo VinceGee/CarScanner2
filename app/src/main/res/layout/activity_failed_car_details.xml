@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7faff"
+    android:orientation="vertical"
+    >
+
+    <com.empire.vince.vokers.carscanner.utilities.VokersTextView
+        android:id="@+id/welc_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unregistered"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingBottom="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:layout_below="@+id/welc_admin"
+        android:id="@+id/linearLayout_ip">
+        <!--String guard, String no_plate,String date, String status, String location)-->
+        <com.empire.vince.vokers.carscanner.utilities.VokersTextView
+            android:id="@+id/_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guard Name"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+
+            />
+
+    </LinearLayout>
+
+    <com.empire.vince.vokers.carscanner.utilities.VokersEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_guard_name"
+        android:layout_below="@+id/linearLayout_ip"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingBottom="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_below="@+id/setting_guard_name"
+        android:id="@+id/linearLayout_location">
+
+        <com.empire.vince.vokers.carscanner.utilities.VokersTextView
+            android:id="@+id/location_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number Plate"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+
+            />
+
+    </LinearLayout>
+    <com.empire.vince.vokers.carscanner.utilities.VokersEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_no_plate"
+        android:layout_below="@+id/linearLayout_location"
+        />
+
+    <!--String guard, String no_plate,String date, String status, String location)-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_below="@+id/setting_no_plate"
+        android:id="@+id/linearLayout_status">
+
+        <com.empire.vince.vokers.carscanner.utilities.VokersTextView
+            android:id="@+id/location_status_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@color/text"
+            android:textSize="25sp"
+
+            />
+
+    </LinearLayout>
+    <com.empire.vince.vokers.carscanner.utilities.VokersEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_text"
+        android:hint="In OR Out"
+        android:layout_below="@+id/linearLayout_status"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:padding="15dp"
+        android:id="@+id/linear"
+
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        >
+
+        <com.empire.vince.vokers.carscanner.utilities.VokersTextView
+            android:id="@+id/in_or_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

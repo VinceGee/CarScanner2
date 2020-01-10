@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Full Name"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/dTvName"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Licence No"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/dTvLicence"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Address"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/dTvAddress"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+
+        <TextView
+            android:text="National ID"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/dTvId"
+            android:textStyle="bold"
+            android:layout_weight="0.5"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight="0.5"/>
+
+
+        <Button
+            android:text="OK"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:id="@+id/dButtonOk"
+            android:textColor="@color/blue"
+            android:layout_weight="0.5"/>
+
+
+
+    </TableRow>
+</TableLayout>

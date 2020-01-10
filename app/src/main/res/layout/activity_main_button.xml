@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    tools:context=".activities.MainMenuActivity">
+
+    <com.empire.vince.vokers.carscanner.utilities.RingButton
+        android:id="@+id/ringButton"
+        app:ringbutton_upText="Scan"
+        app:ringbutton_downText="History"
+        app:ringbutton_upDrawable="@drawable/scan"
+        app:ringbutton_downDrawable="@drawable/history"
+        android:layout_centerInParent="true"
+        android:layout_width="240dp"
+        android:layout_height="240dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logout_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vincent H Guyo"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:id="@+id/username_textview"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--  android:layout_alignBottom="@+id/login_button"-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/buttonUpdate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="The vehicle is not registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewBlink"
+        android:textSize="20sp"
+        android:layout_above="@+id/buttonUpdate"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/red" />
+
+</RelativeLayout>
